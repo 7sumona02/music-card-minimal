@@ -50,22 +50,17 @@ const ProgressBar: React.FC = () => {
   };
 
   return (
-    <div className="w-60 absolute bottom-10 left-1/2 transform -translate-x-1/2">
+    <div className="w-40 absolute bottom-12 left-1/2 transform -translate-x-1/2">
       <div 
-        className="w-full h-1 bg-neutral-300 rounded-full cursor-pointer relative"
+        className="w-full h-[4px] bg-neutral-300 rounded-full cursor-pointer relative"
         onClick={handleSeek}
       >
         <div 
-          className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full relative"
+          className="h-full bg-white rounded-full relative"
           style={{ width: `${progress}%` }}
         >
           <div className="absolute right-0 transform translate-x-1/2 -translate-y-1/3 w-2 h-2 bg-white rounded-full shadow-md"></div>
         </div>
-      </div>
-      
-      <div className="flex justify-between text-xs text-neutral-600 mt-1">
-        <span>{formatTime(currentTime)}</span>
-        <span>{formatTime(duration)}</span>
       </div>
     </div>
   );
