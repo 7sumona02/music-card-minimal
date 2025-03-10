@@ -10,7 +10,7 @@ const Page = () => {
   };
 
   return (
-    <div className='h-screen w-screen page bg-neutral-50'>
+    <div className='h-screen w-screen page bg-[#38040e]'>
       <div className='card-bg h-80 w-80 rounded-[15%] page relative'>
         <div className='h-80 w-80 absolute morphism'></div>
         <div className='absolute top-10 left-10'>
